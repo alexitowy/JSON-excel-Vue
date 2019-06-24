@@ -88,9 +88,11 @@ export default {
   },
   methods: {
     beforeExportData() {
+      // eslint-disable-next-line no-console
       console.log("exportando los datos");
     },
     afterExportData() {
+      // eslint-disable-next-line no-console
       console.log("se han exportado los datos correctament");
     }
   }
