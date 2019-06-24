@@ -1,11 +1,11 @@
 {
   "name": "export-json-excel",
-  "version": "0.1.8",
+  "version": "0.1.13",
   "private": false,
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name exportJSONExcel ./src/components/index.js",
+    "build": "vue-cli-service build --target lib --name exportJsonExcel ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -66,7 +66,7 @@
     "> 1%",
     "last 2 versions"
   ],
-  "main": "./dist/exportJSONExcel.common.js",
+  "main": "./dist/exportJsonExcel.common.js",
   "files": [
     "dist/*",
     "src/*",
