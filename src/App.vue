@@ -1,5 +1,6 @@
 <template>
   <export-data-component
+    :fields="fields"
     :data="items"
     :name="name"
     :worksheet="worksheet"

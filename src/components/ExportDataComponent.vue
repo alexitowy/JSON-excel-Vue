@@ -75,7 +75,7 @@ export default {
               cell.style.font = { bold: false };
               switch (field.type) {
                 case "Date":
-                  cell.value = moment(cell).format(field.format);
+                  cell.value = moment(cell.value).format(field.format);
                   break;
                 case "Boolean":
                   if (typeof cell.value === "string") {
