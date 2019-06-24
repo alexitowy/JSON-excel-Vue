@@ -114,12 +114,11 @@ In your HTML call it like
 	name="filename"
   :beforeExport="startDownload"
   :afterExport="finishDownload">
-
-	Descargar excel (tu puedes cambiar este código por el que quieras)
+    Descargar excel (tu puedes cambiar este código por el que quieras)
 
 </export-json-excel>
 ```
 Requerido
 - data: Contiene los datos que quieres exportar,
 - fields: Contiene las cabeceras de las columnas.
-```js
+
