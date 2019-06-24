@@ -13,7 +13,7 @@ export default {
   props: {
     data: {
       type: Array,
-      required: false,
+      required: true,
       default: null
     },
     fields: {
@@ -99,9 +99,7 @@ export default {
       Object.keys(this.data[0]).forEach(element => {
         let currentItem = {
           header: element,
-          key: element,
-          width: "auto",
-          style: { font: { bold: true } }
+          key: element
         };
         dataHeader.push(currentItem);
       });

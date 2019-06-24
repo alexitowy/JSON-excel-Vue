@@ -1,12 +1,12 @@
 import Vue from "vue";
-import ExportJSONExcel from "./ExportDataComponent";
+import ExportJsonExcel from "./ExportDataComponent";
 
-const components = {
-  ExportJSONExcel
+const Components = {
+  ExportJsonExcel
 };
 
-Object.keys(components).forEach(name => {
-  Vue.component(name, components[name]);
+Object.keys(Components).forEach(name => {
+  Vue.component(name, Components[name]);
 });
 
-export default ExportJSONExcel;
+export default Components;

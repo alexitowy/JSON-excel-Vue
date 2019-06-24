@@ -1,7 +1,8 @@
 {
   "name": "export-json-excel",
-  "version": "0.1.1",
+  "version": "0.1.8",
   "private": false,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name exportJSONExcel ./src/components/index.js",
@@ -15,6 +16,24 @@
     "moment": "^2.24.0",
     "vue": "^2.6.10"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexitowy/DonwloadComponent.git"
+  },
+  "homepage": "https://github.com/alexitowy/DonwloadComponent/blob/master/README.md",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue2",
+    "Excel",
+    "xlsx",
+    "json",
+    "export",
+    "json excel",
+    "download",
+    "component"
+  ],
+  "author": "Julio Alexander Guerrero Flores",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
