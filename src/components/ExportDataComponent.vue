@@ -75,10 +75,15 @@ export default {
               cell.style.font = { bold: false };
               switch (field.type) {
                 case "Date":
-                  cell.value = moment(cell).format(field.format);
+                  cell.value = moment(cell.value).format(field.format);
                   break;
                 case "Boolean":
-                  cell.value = cell.value === "true" ? "SI" : "NO";
+                  if (typeof cell.value === "string") {
+                    if (cell.value.toLowerCase() === "true") cell.value = "SI";
+                    else cell.value = "NO";
+                  } else if (typeof cell.value === "boolean") {
+                    cell.value = cell.value ? "SI" : "NO";
+                  }
                   break;
                 case "Number":
                   cell.value = parseInt(cell.value);
