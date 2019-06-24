@@ -5,7 +5,9 @@
     :worksheet="worksheet"
     :beforeExport="beforeExportData"
     :afterExport="afterExportData"
-  />
+  >
+  Exportar datos a excel
+  </export-data-component>
 </template>
 
 <script>
@@ -27,7 +29,8 @@ export default {
           phone: "1-770-736-8031 x56442",
           website: "hildegard.org",
           company: "Romaguera-Crona",
-          active: "true"
+          active: "true",
+          birthdate: "1987-11-23"
         },
         {
           id: 2,
@@ -38,7 +41,8 @@ export default {
           phone: "010-692-6593 x09125",
           website: "anastasia.net",
           company: "Deckow-Crist",
-          active: "false"
+          active: "false",
+          birthdate: "1987-11-23"
         },
         {
           id: 3,
@@ -49,7 +53,8 @@ export default {
           phone: "1-463-123-4447",
           website: "ramiro.info",
           company: "Romaguera-Jacobson",
-          active: "true"
+          active: "true",
+          birthdate: "1987-11-23"
         },
         {
           id: 4,
@@ -60,7 +65,8 @@ export default {
           phone: "493-170-9623 x156",
           website: "kale.biz",
           company: "Robel-Corkery",
-          active: "false"
+          active: "false",
+          birthdate: "1987-11-23"
         }
       ],
       fields: [
@@ -80,6 +86,12 @@ export default {
           title: "Activo",
           name: "active",
           type: "Boolean"
+        },
+        {
+          title: "F. Nacimiento",
+          name: "birthdate",
+          type: "Date",
+          format: "DD/MM/YYYY"
         }
       ],
       name: "Usuarios",
