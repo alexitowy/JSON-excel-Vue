@@ -13,7 +13,7 @@
     "exceljs": "^1.12.2",
     "file-saver": "^2.0.2",
     "lodash": "^4.17.21",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "vue": "^2.6.10"
   },
   "repository": {
